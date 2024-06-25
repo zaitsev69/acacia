@@ -5,22 +5,22 @@ const Booking = () => {
 
                 <form className="space-y-4">
                     <h2 className="uppercase text-gold underline text-center text-xl sm:text-2xl">Réservation</h2>
-                    <p className="text-center">Vous pouvez réserver par téléphone au 04 90 65 44 25
+                    <p className="text-center">Vous pouvez réserver par téléphone au<br></br> 04 90 65 44 25
                     ou via ce formulaire :</p>
                     <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nom:</label>
+                        <label htmlFor="name" className="block text-base font-medium text-gray-700">Nom:</label>
                         <input type="text" id="name" name="name" required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
                     </div>
                     <div>
-                        <label htmlFor="date" className="block text-sm font-medium text-gray-700">Date:</label>
+                        <label htmlFor="date" className="block text-base font-medium text-gray-700">Date:</label>
                         <input type="date" id="date" name="date" required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
                     </div>
                     <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Numéro de Téléphone:</label>
+                        <label htmlFor="phone" className="block text-base font-medium text-gray-700">Numéro de Téléphone:</label>
                         <input type="tel" id="phone" name="phone" required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
                     </div>
                     <div>
-                        <label htmlFor="time" className="block text-sm font-medium text-gray-700">Heure:</label>
+                        <label htmlFor="time" className="block text-base font-medium text-gray-700">Heure:</label>
                         <select id="time" name="time" required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                             <option value="11:30">11h30</option>
                             <option value="11:30">11h45</option>
@@ -33,11 +33,11 @@ const Booking = () => {
                         </select>
                     </div>
                     <div>
-                        <label htmlFor="guests" className="block text-sm font-medium text-gray-700">Nombre de Couverts:</label>
+                        <label htmlFor="guests" className="block text-base font-medium text-gray-700">Nombre de Couverts:</label>
                         <input type="number" id="guests" name="guests" min="1" max="20" required className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
                     </div>
                     <div>
-                        <label htmlFor="diet" className="block text-sm font-medium text-gray-700">Régime Particulier:</label>
+                        <label htmlFor="diet" className="block text-base font-medium text-gray-700 pb-1">Régime Particulier:</label>
                         <div id="diet" className="space-y-2">
                             <div>
                                 <input type="checkbox" id="vegetarian" name="diet" value="vegetarian" className="mr-2" />

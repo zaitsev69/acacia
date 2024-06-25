@@ -3,7 +3,7 @@
 const Info = () => {
     return (
       <div className="bg-primary text-white flex flex-col items-center justify-center mt-4">
-        <h2 className="uppercase underline text-center mb-4">
+        <h2 className="uppercase text-xl underline text-center mb-4">
           nos horaires et jour d'ouvertures
         </h2>
         <p className="underline text-center mb-3 text-base md:text-lg lg:text-xl xl:text-2xl">L'Acacia en Provence</p>

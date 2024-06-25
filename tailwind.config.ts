@@ -8,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily : {
-        serenity: ['serenity', 'sans-serif'],
-      },
       colors: {
         'primary': '#8C7E77',
         'grey' : '#D9D9D9',

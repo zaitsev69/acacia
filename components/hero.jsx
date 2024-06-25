@@ -6,6 +6,7 @@ const Hero = () => {
   return (
     
     <div className="text-center mt-4 mx-2">
+      <h1 className='text-gold underline text-center text-xl uppercase sm:text-2xl'>Maison l'Acacia</h1>
       <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
         Lorem ipsum dolor sit amet consectetur. Dignissim enim integer phasellus sed elementum id sed etiam tincidunt. Auctor ornare et tortor eget gravida quam. Augue in sagittis fringilla ultrices molestie sollicitudin sed est. Cum amet maecenas mollis neque dictum pulvinar egestas cursus.
       </p>
