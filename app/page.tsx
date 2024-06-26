@@ -1,8 +1,8 @@
 // pages/index.js
 
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import Info from '../components/Info';
+import Header from '../components/header';
+import Hero from '../components/hero';
+import Info from '../components/info';
 import Booking from '../components/booking';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
@@ -12,15 +12,15 @@ import Entry from '../components/entry';
 export default function Home() {
   return (
     <>
-        <main className="bg-bg">
-          <Header />
-          <Entry />
-          <Hero />
-          <Info />
-          <Booking />
-          <Contact />
-          <Footer />
-        </main>
+      <Header />
+      <main className="bg-grey lg:mx-6">
+        <Entry />
+        <Hero />
+        <Info />
+        <Booking />
+        <Contact />
+        <Footer />
+      </main>
     </>
   );
 }
