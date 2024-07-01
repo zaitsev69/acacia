@@ -1,7 +1,7 @@
 const Contact = () => {
     return (
         <div className="my-2 py-4 text-white  bg-primary text-center">
-            <h2 className=" uppercase  underline text-center text-xl sm:text-2xl">Contacts</h2>
+            <h2 className=" uppercase  underline text-center text-xl sm:text-2xl">Contact</h2>
             <div className="text-lg mt-2">
                 <p>L’Acacia en Provence</p>
                 <div className="flex mt-2 justify-center">

@@ -37,9 +37,9 @@ const Booking = () => {
     });
     const result = await res.json();
     if (result.success) {
-      setStatus('Email envoyé avec succès!');
+      setStatus('Réservation effectué avec succès!');
     } else {
-      setStatus('Erreur lors de l\'envoi de l\'email.');
+      setStatus('Erreur lors de la réservation merci de passer par le téléphone.');
     }
   };
 

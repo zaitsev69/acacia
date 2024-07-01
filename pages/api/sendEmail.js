@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'nathan.cadilhacpro@gmail.com',
+      to: process.env.EMAIL_RECEIVER,
       subject: 'Nouvelle Réservation',
       text: `
         Nom: ${name}\n
