@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const Booking = () => {
+const Booking = ({}) => {
   const [formData, setFormData] = useState({
     name: '',
     date: '',

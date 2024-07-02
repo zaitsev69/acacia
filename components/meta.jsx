@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-function Meta() {
+function Meta({}) {
     return (
             <Head>
                 <title>Maison l'Acacia</title>

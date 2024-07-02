@@ -1,5 +1,5 @@
 // C:\Users\natha\code\acacia\pages\backoffice.js
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import BackOffice from '../components/backoffice';
 import Info from '../components/info';
 

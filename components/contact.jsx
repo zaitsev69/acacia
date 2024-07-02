@@ -1,4 +1,4 @@
-const Contact = () => {
+const Contact = ({}) => {
     return (
         <div className="my-2 py-4 text-white  bg-primary text-center">
             <h2 className=" uppercase  underline text-center text-xl sm:text-2xl">Contact</h2>

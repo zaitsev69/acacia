@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = ({}) => {
     return (
         <div className="bg-grey text-center py-2">
             <p>Retrouvez l’actualité de l’Acacia en Provence sur

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const Header = () => {
+const Header = ({}) => {
   return (
     <header className="bg-grey text-white p-2 lg:p-2 fixed w-full z-50">
       <nav>
