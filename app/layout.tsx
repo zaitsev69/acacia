@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Roboto, Playfair_Display } from 'next/font/google';
 
-export const playfair_display = Playfair_Display({
+const playfair_display = Playfair_Display({
   weight: '500',
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-playfair-display'
 });
 
-export const roboto = Roboto({
+const roboto = Roboto({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
   subsets: ['latin'],

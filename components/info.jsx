@@ -1,11 +1,17 @@
 // C:\Users\natha\code\acacia\components\info.jsx
-const Info = ({ file1, file2 }) => {
+const Info = ({}) => {
+
+  
+  //fetch les files depuis /public
+  const file1 = 'carte_acacia.pdf';
+  const file2 = 'carte_petit_acacia.pdf';
+
   return (
     <div className="bg-primary text-white flex flex-col items-center justify-center mt-4">
       <h2 className="uppercase text-xl underline text-center mb-4">
-        Nos horaires et jours d'ouverture
+        Nos horaires et jours d&apos;ouverture
       </h2>
-      <p className="underline text-center mb-3 text-base md:text-lg lg:text-xl xl:text-2xl">L'Acacia en Provence</p>
+      <p className="underline text-center mb-3 text-base md:text-lg lg:text-xl xl:text-2xl">L&apos;Acacia en Provence</p>
       <p className="text-center mb-1 text-base md:text-lg lg:text-xl xl:text-2xl">Cuisine semi-gastronomique</p>
       <p className="text-center mb-1 text-base md:text-lg lg:text-xl xl:text-2xl">Ouvert le vendredi soir, samedi soir et dimanche midi</p>
       <a href={`/uploads/${file1}`} target="_blank" rel="noopener noreferrer">
