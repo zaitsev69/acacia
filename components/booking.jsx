@@ -117,7 +117,7 @@ const Booking = ({}) => {
               />
             </div>
             <div>
-              <label htmlFor="children" className="block text-base font-medium text-gray-700">Est ce qu'il y aura des enfants ?</label>
+              <label htmlFor="children" className="block text-base font-medium text-gray-700">Est ce qu&apos;il y aura des enfants ?</label>
               <select
                 id="children"
                 defaultValue="Non"

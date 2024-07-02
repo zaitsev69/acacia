@@ -24,13 +24,13 @@ const Hero = ({}) => {
     <div className="text-center mt-4 mx-2 lg:mt-12">
       <div className="lg:flex lg:items-center lg:border-2 lg:border-primary lg:rounded-lg lg:mx-24">
         <div className="lg:flex lg:flex-col lg:items-center">
-          <h1 className="text-gold underline text-xl uppercase lg:text-2xl">Maison l'Acacia</h1>
+          <h1 className="text-gold underline text-xl uppercase lg:text-2xl">Maison l&apos;Acacia</h1>
           <p className="text-base lg:text-xl lg:text-left lg:w-4/6 lg:mt-4">
-            L’Acacia en Provence est un lieu unique qui se distingue par sa terrasse ensoleillée et son ambiance conviviale.
-            La cheffe Joanna, passionnée par l’art culinaire, propose une cuisine raffinée et créative, mettant à l’honneur les produits locaux de la région.
+            L&apos;Acacia en Provence est un lieu unique qui se distingue par sa terrasse ensoleillée et son ambiance conviviale.
+            La cheffe Joanna, passionnée par l&apos;art culinaire, propose une cuisine raffinée et créative, mettant à l&apos;honneur les produits locaux de la région.
           </p>
           <p className="hidden text-base lg:text-xl lg:text-left lg:w-4/6 lg:mt-4 lg:block">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt minima commodi eveniet error, eius voluptatum eaque, ducimus quis quidem dolores aliquid. Eius adipisci esse odit fugit. Vel, possimus minima?anna, passionnée par l’art culinaire, propose une cuisine raffinée et créative, mettant à l’honneur les produits locaux de la région.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt minima commodi eveniet error, eius voluptatum eaque, ducimus quis quidem dolores aliquid. Eius adipisci esse odit fugit. Vel, possimus minima?anna, passionnée par l&apos;art culinaire, propose une cuisine raffinée et créative, mettant à l&apos;honneur les produits locaux de la région.
           </p>
         </div>
         <Image src="/exte.JPEG" alt="Plate of Food" layout="responsive" width={250} height={250} className="rounded-lg hidden lg:block max-w-md" />
