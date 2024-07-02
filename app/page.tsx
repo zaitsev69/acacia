@@ -1,5 +1,3 @@
-// pages/index.js
-
 import Header from '../components/header';
 import Hero from '../components/hero';
 import Info from '../components/info';

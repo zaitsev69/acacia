@@ -1,0 +1,10 @@
+// pages/logout.js
+import { signOut } from 'next-auth/client';
+
+const Logout = () => {
+  return (
+    <button onClick={() => signOut()}>Logout</button>
+  );
+};
+
+export default Logout;
