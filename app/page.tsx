@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="bg-grey lg:mx-6">
+      <main className="bg-grey lg:mx-24 lg:bg-bg ">
         <Entry />
         <Hero />
         <Info />

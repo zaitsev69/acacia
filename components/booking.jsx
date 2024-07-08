@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const Booking = ({}) => {
+const Booking = ({ }) => {
   const [formData, setFormData] = useState({
     name: '',
     date: '',
@@ -44,53 +44,53 @@ const Booking = ({}) => {
   };
 
   return (
-    <div className=" flex justify-center items-center bg-cover bg-center mt-4 mb-4" style={{ backgroundImage: "url('/interior.jpeg')" }}>
-      <div className="bg-white bg-opacity-80 p-6  shadow-md max-w-md w-full">
+    <div className="flex justify-center items-center bg-cover bg-center lg:py-32 mt-4 mb-4" style={{ backgroundImage: "url('/interior.jpeg')" }}>
+      <div className="bg-white bg-opacity-80 p-6 shadow-md max-w-md w-full lg:max-w-4xl">
         <form className="space-y-4" onSubmit={handleSubmit}>
-          <h2 className="uppercase text-gold underline text-center text-xl sm:text-2xl">Réservation</h2>
-          <p className="text-center">Vous pouvez réserver par téléphone au<br /> 04 90 65 44 25 ou via ce formulaire :</p>
-          
-          <div className="space-y-4">
+          <h2 className="uppercase text-gold underline text-center text-xl sm:text-2xl lg:text-3xl">Réservation</h2>
+          <p className="text-center text-base lg:text-xl">Vous pouvez réserver par téléphone au<br /> 04 90 65 44 25 ou via ce formulaire :</p>
+
+          <div className="space-y-4 lg:grid lg:grid-cols-2 lg:gap-4 lg:space-y-0">
             <div>
-              <label htmlFor="name" className="block text-base font-medium text-gray-700">Nom:</label>
+              <label htmlFor="name" className="block text-base font-medium text-gray-700 lg:text-xl">Nom:</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-base font-medium text-gray-700">Numéro de Téléphone:</label>
+              <label htmlFor="phone" className="block text-base font-medium text-gray-700 lg:text-xl">Numéro de Téléphone:</label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
                 required
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="date" className="block text-base font-medium text-gray-700">Date:</label>
+              <label htmlFor="date" className="block text-base font-medium text-gray-700 lg:text-xl">Date:</label>
               <input
                 type="date"
                 id="date"
                 name="date"
                 required
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="time" className="block text-base font-medium text-gray-700">Heure:</label>
+              <label htmlFor="time" className="block text-base font-medium text-gray-700 lg:text-xl">Heure:</label>
               <select
                 id="time"
                 name="time"
                 required
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
               >
                 <option value="11:30">11h30</option>
@@ -104,7 +104,7 @@ const Booking = ({}) => {
               </select>
             </div>
             <div>
-              <label htmlFor="guests" className="block text-base font-medium text-gray-700">Nombre de Couverts:</label>
+              <label htmlFor="guests" className="block text-base font-medium text-gray-700 lg:text-xl">Nombre de Couverts:</label>
               <input
                 type="number"
                 id="guests"
@@ -112,26 +112,26 @@ const Booking = ({}) => {
                 min="1"
                 max="20"
                 required
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="children" className="block text-base font-medium text-gray-700">Est ce qu&apos;il y aura des enfants ?</label>
+              <label htmlFor="children" className="block text-base font-medium text-gray-700 lg:text-xl">Est ce qu&apos;il y aura des enfants ?</label>
               <select
                 id="children"
                 defaultValue="Non"
                 name="children"
                 required
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
               >
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
               </select>
             </div>
-            <div>
-              <label htmlFor="diet" className="block text-base font-medium text-gray-700 pb-1">Régime Particulier :</label>
+            <div className="lg:col-span-2">
+              <label htmlFor="diet" className="block text-base font-medium text-gray-700 pb-1 lg:text-xl">Régime Particulier :</label>
               <div id="diet" className="space-y-2">
                 <div>
                   <input
@@ -142,7 +142,7 @@ const Booking = ({}) => {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="none">Non</label>
+                  <label htmlFor="none" className="text-base lg:text-lg">Non</label>
                 </div>
                 <div>
                   <input
@@ -153,7 +153,7 @@ const Booking = ({}) => {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="vegetarian">Végétarien</label>
+                  <label htmlFor="vegetarian" className="text-base lg:text-lg">Végétarien</label>
                 </div>
                 <div>
                   <input
@@ -164,7 +164,7 @@ const Booking = ({}) => {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="vegan">Végan</label>
+                  <label htmlFor="vegan" className="text-base lg:text-lg">Végan</label>
                 </div>
                 <div>
                   <input
@@ -175,7 +175,7 @@ const Booking = ({}) => {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="gluten-free">Sans Gluten</label>
+                  <label htmlFor="gluten-free" className="text-base lg:text-lg">Sans Gluten</label>
                 </div>
                 <div>
                   <input
@@ -186,19 +186,21 @@ const Booking = ({}) => {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="lactose-free">Sans Lactose</label>
+                  <label htmlFor="lactose-free" className="text-base lg:text-lg">Sans Lactose</label>
                 </div>
               </div>
             </div>
           </div>
 
-          <button type="submit" className="w-full py-2 px-4 bg-primary text-white font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <button type="submit" className="w-full py-2 px-4 bg-primary text-white font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 lg:text-xl">
             Réserver
           </button>
-          {status && <p>{status}</p>}
+          {status && <p className="text-center text-base lg:text-xl">{status}</p>}
         </form>
       </div>
     </div>
+
+
   );
 };
 
