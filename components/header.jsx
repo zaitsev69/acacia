@@ -4,10 +4,10 @@ const Header = ({}) => {
   return (
     <header className="bg-grey text-white p-2 lg:p-2 fixed w-full z-50">
       <nav>
-        <ul className="flex justify-between items-center lg:mx-8">
+        <ul className="flex justify-between items-center lg:mx-24">
           <li>
             <a>
-              <Image src="/frenchflag.svg" alt="French Flag" width={24} height={24} />
+              <Image src="/frenchflag.svg" alt="French Flag" width={24} height={24} className='lg:w-8'/>
             </a>
           </li>
             <li>
@@ -17,7 +17,7 @@ const Header = ({}) => {
             </li>
             <li className="">
               <a>
-                <Image src="/burger.svg" alt="Burger" width={24} height={24} />
+                <Image src="/burger.svg" alt="Burger" width={24} height={24} className='lg:w-8'/>
               </a>
             </li>
         </ul>

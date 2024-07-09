@@ -7,8 +7,8 @@ const Info = ({ }) => {
   const file2 = 'carte_petit_acacia.pdf';
 
   return (
-    <div className="bg-primary lg:bg-grey text-white flex flex-col items-center justify-center lg:px-8 lg:py-12 lg:my-48">
-      <h2 className="uppercase text-xl lg:text-gold lg:text-3xl underline text-center mb-4">
+    <div className="bg-primary my-12 lg:bg-grey text-white flex flex-col items-center justify-center lg:px-8 lg:py-12 lg:my-48">
+      <h2 className="uppercase text-xl lg:text-gold lg:text-3xl underline text-center mb-4 lg:mb-20">
         Nos horaires et jours d&apos;ouverture
       </h2>
       <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:w-full lg:text-primary ">
@@ -29,7 +29,7 @@ const Info = ({ }) => {
           </a>
         </div>
       </div>
-      <p className="text-center mb-1 text-base md:text-lg lg:text-xl xl:text-2xl lg:text-primary mt-8">Grande occasion ? Réserver un diner privé par téléphone.</p>
+      <p className="text-center mb-1 text-base md:text-lg lg:text-xl xl:text-2xl lg:text-primary mt-8 lg:mt-20">Grande occasion ? Réserver un diner privé par téléphone.</p>
     </div>
 
   );

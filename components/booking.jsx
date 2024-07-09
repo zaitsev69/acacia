@@ -47,7 +47,7 @@ const Booking = ({ }) => {
     <div className="flex justify-center items-center bg-cover bg-center lg:py-32 mt-4 mb-4" style={{ backgroundImage: "url('/interior.jpeg')" }}>
       <div className="bg-white bg-opacity-80 p-6 shadow-md max-w-md w-full lg:max-w-4xl">
         <form className="space-y-4" onSubmit={handleSubmit}>
-          <h2 className="uppercase text-gold underline text-center text-xl sm:text-2xl lg:text-3xl">Réservation</h2>
+          <h2 className="uppercase text-gold underline text-center text-xl  lg:text-3xl">Réservation</h2>
           <p className="text-center text-base lg:text-xl">Vous pouvez réserver par téléphone au<br /> 04 90 65 44 25 ou via ce formulaire :</p>
 
           <div className="space-y-4 lg:grid lg:grid-cols-2 lg:gap-4 lg:space-y-0">
