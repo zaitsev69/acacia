@@ -5,6 +5,7 @@ import { useState, useRef } from 'react';
 export default function AvatarUploadPage() {
   const inputFileRef = useRef(null);
   const [blob, setBlob] = useState(null);
+  
   return (
     <>
       <h1>Upload le PDF </h1>
@@ -31,9 +32,23 @@ export default function AvatarUploadPage() {
         <input name="file" ref={inputFileRef} type="file" required />
         <button type="submit">Upload</button>
       </form>
+
+        <button onClick={async () => {
+         const response = await fetch('/api/menu/upload', 
+         {
+          method: 'GET',
+         },
+        )
+        const responseBody = await response.json()
+
+        console.log(responseBody)
+        }}>TEST</button>
+
+
+      
       {blob && (
         <div>
-          Blob url: <a href={blob.url}>{blob.url}</a>
+          Menu bien importé
         </div>
       )}
     </>

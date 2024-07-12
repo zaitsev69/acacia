@@ -1,4 +1,4 @@
-import { put } from '@vercel/blob';
+import { put, list } from '@vercel/blob';
 import { NextResponse } from 'next/server';
 
 export async function POST(request) {
@@ -17,6 +17,12 @@ export async function POST(request) {
 
   return NextResponse.json(blob);
 }
+
+export async function GET() {   
+    const blob = await list();
+    return NextResponse.json(blob);
+}
+
 
 // The next lines are required for Pages API Routes only
 // export const config = {
