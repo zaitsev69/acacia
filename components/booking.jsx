@@ -1,18 +1,23 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import Alert from './ui/alert';
 
-const Booking = ({ }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    date: '',
-    phone: '',
-    time: '',
-    guests: '',
-    diet: [],
-    children: '',
-  });
-  const [status, setStatus] = useState('');
+const Booking = () => {
+
+const initialFormData = {
+  name: '',
+  date: '',
+  phone: '',
+  time: '',
+  guests: '',
+  diet: [],
+  children: '',
+}
+
+  const [formData, setFormData] = useState(initialFormData);
+  const [status, setStatus] = useState(false);
+  const [showAlert, setShowAlert] = useState(false)
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -37,9 +42,9 @@ const Booking = ({ }) => {
     });
     const result = await res.json();
     if (result.success) {
-      setStatus('Réservation effectué avec succès!');
-    } else {
-      setStatus('Erreur lors de la réservation merci de passer par le téléphone.');
+      setShowAlert(true)
+      setStatus(true);
+      setFormData(initialFormData)
     }
   };
 
@@ -117,7 +122,7 @@ const Booking = ({ }) => {
               />
             </div>
             <div>
-              <label htmlFor="children" className="block text-base font-medium text-gray-700 lg:text-xl">Est ce qu&apos;il y aura des enfants ?</label>
+              <label htmlFor="children" className="block text-base font-medium text-gray-700 lg:text-xl">Il y aura t'il des enfants ?</label>
               <select
                 id="children"
                 defaultValue="Non"
@@ -195,7 +200,7 @@ const Booking = ({ }) => {
           <button type="submit" className="w-full py-2 px-4 bg-primary text-white font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 lg:text-xl">
             Réserver
           </button>
-          {status && <p className="text-center text-base lg:text-xl">{status}</p>}
+          {showAlert && <Alert isSuccess={status} />}
         </form>
       </div>
     </div>

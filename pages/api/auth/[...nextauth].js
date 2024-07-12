@@ -19,6 +19,7 @@ export default NextAuth({
       },
     }),
   ],
+  secret: process.env.NEXTAUTH_SECRET,
   pages: {
     signIn: '/login', // Page de connexion personnalisée
     error: '/login' // Page d'erreur personnalisée

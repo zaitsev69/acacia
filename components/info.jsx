@@ -8,7 +8,7 @@ const Info = ({ }) => {
 
   return (
     <div className="bg-primary my-12 lg:bg-grey text-white flex flex-col items-center justify-center lg:px-8 lg:py-12 lg:my-48">
-      <h2 className="uppercase text-xl lg:text-gold lg:text-3xl underline text-center mb-4 lg:mb-20">
+      <h2 className="uppercase text-xl lg:text-gold lg:text-3xl underline text-center mb-4 lg:mb-20 pt-4 px-4">
         Nos horaires et jours d&apos;ouverture
       </h2>
       <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:w-full lg:text-primary ">
