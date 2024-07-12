@@ -122,7 +122,7 @@ const initialFormData = {
               />
             </div>
             <div>
-              <label htmlFor="children" className="block text-base font-medium text-gray-700 lg:text-xl">Il y aura t&aposil des enfants ?</label>
+              <label htmlFor="children" className="block text-base font-medium text-gray-700 lg:text-xl">Il y aura t&apos;il des enfants ?</label>
               <select
                 id="children"
                 defaultValue="Non"
