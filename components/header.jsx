@@ -41,7 +41,7 @@ const Header = () => {
       <nav aria-label="Global" className="mx-auto flex items-center justify-between gap-x-6 lg:p-6 p-4 lg:py-6 lg:mx-24 lg:px-0">
         <div className="flex items-center">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Maison l'Acacia</span>
+            <span className="sr-only">Maison l&apos;Acacia</span>
             <Image src="/logobrown.svg" alt="Logo" width={44} height={44} className="lg:w-16" />
           </a>
         </div>
@@ -73,7 +73,7 @@ const Header = () => {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-grey px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center gap-x-6">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Maison l'Acacia</span>
+              <span className="sr-only">Maison l&apos;Acacia</span>
               <Image src="/logobrown.svg" alt="Logo" width={44} height={44} className="lg:w-16" />
             </a>
             <a href="#" className="ml-auto">
