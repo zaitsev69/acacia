@@ -4,7 +4,7 @@ import GoogleMap from '../components/maps';
 
 const Contact = () => {
   return (
-    <div className="my-12 py-4 lg:mt-48 text-white bg-primary">
+    <div id="contact" className="my-12 py-4 lg:mt-48 text-white bg-primary">
       <h2 className="uppercase underline text-center text-xl lg:text-4xl">Contact</h2>
       <div className="lg:flex lg:justify-between lg:items-center lg:mt-8 px-4 lg:px-16">
         <div className="text-lg mt-4 lg:mt-0 lg:w-1/2">

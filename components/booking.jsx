@@ -49,11 +49,11 @@ const initialFormData = {
   };
 
   return (
-    <div className="flex justify-center items-center bg-cover  lg:py-32 mt-4 mb-4 bg-local bg-center bg-[url('/interior.jpeg')] ">
+    <div id="booking" className="flex justify-center items-center bg-cover  lg:py-32 mt-4 mb-4 bg-local bg-center bg-[url('/interior.jpeg')] ">
       <div className="bg-white bg-opacity-80 p-6 shadow-md max-w-md w-full lg:max-w-4xl">
         <form className="space-y-4" onSubmit={handleSubmit}>
           <h2 className="uppercase text-gold underline text-center text-xl  lg:text-3xl">Réservation</h2>
-          <p className="text-center text-base lg:text-xl">Vous pouvez réserver par téléphone au<br /> 04 90 65 44 25 ou via ce formulaire :</p>
+          <p className="text-center text-base text-black lg:text-xl">Vous pouvez réserver par téléphone au<br /> 04 90 65 44 25 ou via ce formulaire :</p>
 
           <div className="space-y-4 lg:grid lg:grid-cols-2 lg:gap-4 lg:space-y-0">
             <div>
@@ -147,7 +147,7 @@ const initialFormData = {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="none" className="text-base lg:text-lg">Non</label>
+                  <label htmlFor="none" className="text-base lg:text-lg text-black">Non</label>
                 </div>
                 <div>
                   <input
@@ -158,7 +158,7 @@ const initialFormData = {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="vegetarian" className="text-base lg:text-lg">Végétarien</label>
+                  <label htmlFor="vegetarian" className="text-base lg:text-lg text-black">Végétarien</label>
                 </div>
                 <div>
                   <input
@@ -169,7 +169,7 @@ const initialFormData = {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="vegan" className="text-base lg:text-lg">Végan</label>
+                  <label htmlFor="vegan" className="text-base lg:text-lg text-black">Végan</label>
                 </div>
                 <div>
                   <input
@@ -180,7 +180,7 @@ const initialFormData = {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="gluten-free" className="text-base lg:text-lg">Sans Gluten</label>
+                  <label htmlFor="gluten-free" className="text-base lg:text-lg text-black">Sans Gluten</label>
                 </div>
                 <div>
                   <input
@@ -191,7 +191,7 @@ const initialFormData = {
                     className="mr-2"
                     onChange={handleChange}
                   />
-                  <label htmlFor="lactose-free" className="text-base lg:text-lg">Sans Lactose</label>
+                  <label htmlFor="lactose-free" className="text-base lg:text-lg text-black">Sans Lactose</label>
                 </div>
               </div>
             </div>

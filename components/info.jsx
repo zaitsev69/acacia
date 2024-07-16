@@ -28,11 +28,11 @@ const Info = ({ }) => {
   }, []);
 
   return (
-    <div className="bg-primary my-12 lg:bg-grey text-white flex flex-col items-center justify-center lg:px-8 lg:py-12 lg:my-48">
+    <div id="hours" className="bg-primary my-12 lg:bg-grey text-white flex flex-col items-center justify-center lg:px-8 lg:py-12 lg:my-48">
       <h2 className="uppercase text-xl lg:text-gold lg:text-3xl underline text-center mb-4 lg:mb-20 pt-4 px-4">
         Nos horaires et jours d&apos;ouverture
       </h2>
-      <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:w-full lg:text-primary ">
+      <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:w-full lg:text-gray-900 ">
         <div className="flex flex-col items-center lg:w-1/2 lg:items-center lg:border-r lg:border-primary lg:pr-8">
           <p className="underline text-center mb-3 text-base lg:text-gold md:text-lg lg:text-2xl">L&apos;Acacia en Provence</p>
           <p className="text-center mb-1 text-base md:text-lg lg:text-2xl ">Cuisine semi-gastronomique</p>
@@ -42,14 +42,20 @@ const Info = ({ }) => {
         <div className="flex flex-col items-center lg:w-1/2 lg:pl-8 lg:items-center">
           <p className="underline text-center mb-3 text-base md:text-lg lg:text-gold lg:text-xl xl:text-2xl">Le Petit Acacia</p>
           <p className="text-center mb-1 text-base md:text-lg lg:text-xl xl:text-2xl">Grignotage, boissons et vins.</p>
-          <p className="text-center mb-1 text-base md:text-lg lg:text-xl xl:text-2xl">Ouvert la journée du mercredi au samedi</p>
-          <a href={urlToMenu} target="_blank" rel="noopener noreferrer" className="text-center">
-            <button className="bg-grey lg:bg-primary lg:text-white text-primary py-2 px-4 rounded mb-8 lg:mt-4 text-base md:text-lg lg:text-xl xl:text-2xl">Voir les cartes de nos restaurants</button>
-          </a>
+          <p className="text-center  text-base md:text-lg lg:text-xl xl:text-2xl">Ouvert la journée du mercredi au samedi</p>
+          
         </div>
       </div>
-      <p className="text-center mb-1 text-base md:text-lg lg:text-xl xl:text-2xl lg:text-primary mt-8 lg:mt-20">Grande occasion ? Réserver un diner privé par téléphone.</p>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 lg:size-14 lg:mt-8 animate-bounce mt-4 lg:stroke-primary">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+
+      <a href={urlToMenu} target="_blank" rel="noopener noreferrer" className="text-center">
+            <button className="bg-grey mb-8 font-semibold lg:font-medium lg:bg-primary lg:text-white text-gray-900 py-2 px-4 rounded  lg:mb-8 text-base md:text-lg lg:text-xl xl:text-2xl">Voir les cartes de nos restaurants</button>
+          </a>
+      <p className="text-center mb-1 text-base md:text-lg lg:text-xl xl:text-2xl lg:text-gray-900 lg:mt-0 ">Grande occasion ? Réserver un diner privé par téléphone.</p>
     </div>
+    
 
   );
 };

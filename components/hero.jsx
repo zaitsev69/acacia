@@ -13,7 +13,7 @@ const Hero = ({ }) => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 3000,
+    speed: 4000,
     autoplaySpeed: 0,
     cssEase: 'linear',
     arrows: false,
@@ -34,7 +34,7 @@ const Hero = ({ }) => {
   };
 
   return (
-    <div className="text-center mt-4 mx-2">
+    <div id="about" className="text-center mt-4 mx-2">
       <h1 className="hidden text-gold underline text-xl  lg:block uppercase lg:text-4xl lg:my-24">Maison l&apos;Acacia</h1>
       <div className="lg:flex lg:items-center  lg:mx-24 lg:bg-[url('/quote.png')] bg-no-repeat bg-left-top">
         <div className="lg:flex lg:flex-col lg:items-center">
