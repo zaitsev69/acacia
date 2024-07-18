@@ -39,7 +39,7 @@ const Hero = ({ }) => {
       <div className="lg:flex lg:items-center  lg:mx-24 lg:bg-[url('/quote.png')] bg-no-repeat bg-left-top">
         <div className="lg:flex lg:flex-col lg:items-center">
           <h1 className="text-gold underline text-xl uppercase lg:hidden">Maison l&apos;Acacia</h1>
-          <p className="text-base lg:text-xl lg:text-left lg:w-4/6 lg:mt-4">
+          <p className="text-base text-black lg:text-xl lg:text-left lg:w-4/6 lg:mt-4">
             L&apos;Acacia en Provence est un lieu unique qui se distingue par sa terrasse ensoleillée et son ambiance conviviale.
             La cheffe Joanna, passionnée par l&apos;art culinaire, propose une cuisine raffinée et créative, mettant à l&apos;honneur les produits locaux de la région.
           </p>

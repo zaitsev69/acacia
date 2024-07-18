@@ -34,7 +34,7 @@ const Info = ({ }) => {
       </h2>
       <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:w-full lg:text-gray-900 ">
         <div className="flex flex-col items-center lg:w-1/2 lg:items-center lg:border-r lg:border-primary lg:pr-8">
-          <p className="underline text-center mb-3 text-base lg:text-gold md:text-lg lg:text-2xl">L&apos;Acacia en Provence</p>
+          <p className="underline text-center mb-3 text-base lg:text-gold md:text-lg lg:text-2xl">L &apos;Acacia en Provence</p>
           <p className="text-center mb-1 text-base md:text-lg lg:text-2xl ">Cuisine semi-gastronomique</p>
           <p className="text-center mb-1 text-base md:text-lg lg:text-2xl ">Ouvert le vendredi soir, samedi soir et dimanche midi</p>
           

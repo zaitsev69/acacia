@@ -1,6 +1,6 @@
 const Footer = ({}) => {
     return (
-        <div className="bg-grey text-center py-2 shadow-inner">
+        <div className="bg-grey text-black text-center py-2 shadow-inner">
             <p className="lg:text-xl">Retrouvez l’actualité de l’Acacia en Provence sur
                 Instagram & Facebook</p>
             <div className="flex justify-center">
