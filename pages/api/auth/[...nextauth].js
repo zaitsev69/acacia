@@ -1,3 +1,4 @@
+// pages/api/auth/[...nextauth].js
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
@@ -21,8 +22,8 @@ export default NextAuth({
   ],
   secret: process.env.NEXTAUTH_SECRET,
   pages: {
-    signIn: '/login', // Page de connexion personnalisée
-    error: '/login' // Page d'erreur personnalisée
+    signIn: '/login',
+    error: '/login'
   },
   callbacks: {
     async session({ session, token }) {

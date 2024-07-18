@@ -1,9 +1,9 @@
-// C:\Users\natha\code\acacia\pages\backoffice.js
-import { useState, useEffect} from 'react';
+// pages/backoffice.js
+import { getSession } from 'next-auth/react';
+import { useEffect, useState } from 'react';
 import BackOffice from '../components/backoffice';
-import Info from '../components/info';
 
-export default function BackofficePage() {
+export default function BackofficePage({ session }) {
   const [uploadedFiles, setUploadedFiles] = useState([]);
 
   useEffect(() => {
@@ -13,12 +13,30 @@ export default function BackofficePage() {
     }
   }, []);
 
+  if (!session) {
+    return <p>Access Denied</p>;
+  }
+
   return (
     <div>
       <BackOffice setUploadedFiles={setUploadedFiles} />
-      {uploadedFiles.length === 2 && (
-        <Info file1={uploadedFiles[0]} file2={uploadedFiles[1]} />
-      )}
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  const session = await getSession(context);
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: '/login',
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: { session },
+  };
 }
