@@ -1,15 +1,17 @@
 // pages/backoffice.js
-import { getSession } from 'next-auth/react';
-import { useEffect, useState } from 'react';
-import BackOffice from '../components/backoffice';
+import { getSession } from "next-auth/react";
+import { useEffect, useState } from "react";
+import BackOffice from "../components/backoffice";
 
 export default function BackofficePage({ session }) {
   const [uploadedFiles, setUploadedFiles] = useState([]);
 
   useEffect(() => {
-    const storedFiles = JSON.parse(localStorage.getItem('uploadedFiles'));
-    if (storedFiles) {
-      setUploadedFiles(storedFiles);
+    if (localStorage.getItem("uploadedFiles")) {
+      const storedFiles = JSON.parse(localStorage.getItem("uploadedFiles"));
+      if (storedFiles) {
+        setUploadedFiles(storedFiles);
+      }
     }
   }, []);
 
@@ -31,7 +33,7 @@ export async function getServerSideProps(context) {
 
     return {
       redirect: {
-        destination: '/login',
+        destination: "/login",
         permanent: false,
       },
     };
