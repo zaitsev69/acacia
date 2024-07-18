@@ -49,7 +49,7 @@ const initialFormData = {
   };
 
   return (
-    <div id="booking" className="flex justify-center items-center bg-cover  lg:py-32 mt-4 mb-4 bg-local bg-center bg-[url('/interior.jpeg')] ">
+    <div id="booking" className="flex justify-center items-center bg-cover  lg:py-32 mt-4 mb-4 bg-local bg-center bg-[url('/inside.jpeg')] ">
       <div className="bg-white bg-opacity-80 p-6 shadow-md max-w-md w-full lg:max-w-4xl">
         <form className="space-y-4" onSubmit={handleSubmit}>
           <h2 className="uppercase text-gold underline text-center text-xl  lg:text-3xl">Réservation</h2>

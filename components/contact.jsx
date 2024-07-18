@@ -4,12 +4,12 @@ import GoogleMap from '../components/maps';
 
 const Contact = () => {
   return (
-    <div id="contact" className="my-12 py-4 lg:mt-48 text-white bg-primary">
-      <h2 className="uppercase underline text-center text-xl lg:text-4xl">Contact</h2>
+    <div id="contact" className="my-12 py-4 lg:mt-48 text-white bg-primary lg:bg-grey">
+      <h2 className="uppercase underline text-center lg:text-gold text-xl lg:text-4xl">Contact</h2>
       <div className="lg:flex lg:justify-between lg:items-center lg:mt-8 px-4 lg:px-16">
-        <div className="text-lg mt-4 lg:mt-0 lg:w-1/2">
-          <p className="text-xl lg:text-3xl text-center lg:text-left">• L&apos;Acacia en Provence</p>
-          <div className="flex mt-4 lg:mt-8 justify-center lg:justify-start">
+        <div className="text-lg mt-4 lg:mt-0 lg:w-1/2 lg:text-black">
+          <p className="text-base lg:text-2xl text-center  lg:text-left">• L&apos;Acacia en Provence</p>
+          <div className="flex mt-4 lg:mt-8 justify-center  lg:justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -47,7 +47,7 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-24">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-600">
+            <a key={item.name} href={item.href} className="text-base font-normal leading-6 text-primary">
               {item.name}
             </a>
           ))}
@@ -70,7 +70,7 @@ const Header = () => {
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-grey px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto text-primary bg-grey px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center gap-x-6">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Maison l&apos;Acacia</span>
