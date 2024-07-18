@@ -26,8 +26,9 @@ export default function BackofficePage({ session }) {
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
-
+  console.log(session)
   if (!session) {
+
     return {
       redirect: {
         destination: '/login',
@@ -39,4 +40,5 @@ export async function getServerSideProps(context) {
   return {
     props: { session },
   };
+  
 }
