@@ -54,7 +54,7 @@ const Header = () => {
         </div>
         <div className="flex items-center">
           <a href="#" className="mr-4">
-            <Image src="/frenchflag.svg" alt="French Flag" width={24} height={24} className="lg:w-8" />
+            <Image src="/englishflag.svg" alt="French Flag" width={24} height={24} className="lg:w-8" />
           </a>
           <div className="flex lg:hidden">
             <button

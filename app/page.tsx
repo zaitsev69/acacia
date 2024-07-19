@@ -7,6 +7,7 @@ import Footer from '../components/footer';
 import Entry from '../components/entry';
 
 
+
 export default function Home() {
   return (
     <>
