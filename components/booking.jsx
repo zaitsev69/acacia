@@ -138,17 +138,7 @@ const initialFormData = {
             <div className="lg:col-span-2">
               <label htmlFor="diet" className="block text-base font-medium text-gray-700 pb-1 lg:text-xl">Régime Particulier :</label>
               <div id="diet" className="space-y-2">
-                <div>
-                  <input
-                    type="checkbox"
-                    id="none"
-                    name="diet"
-                    value="none"
-                    className="mr-2"
-                    onChange={handleChange}
-                  />
-                  <label htmlFor="none" className="text-base lg:text-lg text-black">Non</label>
-                </div>
+                
                 <div>
                   <input
                     type="checkbox"

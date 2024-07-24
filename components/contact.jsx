@@ -46,7 +46,7 @@ const Contact = () => {
                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
               />
             </svg>
-            <p className="ml-2 text-base lg:text-2xl">Rue de l&apos;Église 84190 La Roque-Alric</p>
+            <p className="ml-2 text-base lg:text-2xl">Rue de l&apos;Église 84190 La Roque Alric</p>
           </div>
         </div>
         <div className="hidden lg:block ">
