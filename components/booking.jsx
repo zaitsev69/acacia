@@ -5,15 +5,15 @@ import Alert from './ui/alert';
 
 const Booking = () => {
 
-const initialFormData = {
-  name: '',
-  date: '',
-  phone: '',
-  time: '',
-  guests: '',
-  diet: [],
-  children: '',
-}
+  const initialFormData = {
+    name: '',
+    date: '',
+    phone: '',
+    time: '',
+    guests: '',
+    diet: [],
+    children: '',
+  }
 
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
@@ -86,9 +86,11 @@ const initialFormData = {
                 name="date"
                 required
                 className="mt-1 block w-full text-black px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
+                min={new Date().toISOString().split('T')[0]}
                 onChange={handleChange}
               />
             </div>
+
             <div>
               <label htmlFor="time" className="block text-base font-medium text-gray-700 lg:text-xl">Heure:</label>
               <select
@@ -135,7 +137,7 @@ const initialFormData = {
             <div className="lg:col-span-2">
               <label htmlFor="diet" className="block text-base font-medium text-gray-700 pb-1 lg:text-xl">Régime Particulier :</label>
               <div id="diet" className="space-y-2">
-                
+
                 <div>
                   <input
                     type="checkbox"
