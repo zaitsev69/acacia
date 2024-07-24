@@ -98,14 +98,11 @@ const initialFormData = {
                 className="mt-1 block text-black w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
               >
-                <option value="11:30">11h30</option>
-                <option value="11:45">11h45</option>
-                <option value="12:00">12h00</option>
-                <option value="12:15">12h15</option>
-                <option value="12:30">12h30</option>
-                <option value="12:45">12h45</option>
-                <option value="13:00">13h00</option>
-                <option value="13:15">13h15</option>
+                <option value="12:00">12:00 (Uniquement le dimanche) </option>
+                <option value="12:30">12:30 (Uniquement le dimanche)</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
               </select>
             </div>
             <div>
@@ -187,7 +184,7 @@ const initialFormData = {
             </div>
           </div>
 
-          <button type="submit" className="w-full py-2 px-4 bg-primary text-white font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 lg:text-xl">
+          <button type="submit" className="w-full py-2 px-4 bg-primary text-white font-medium rounded-md shadow-sm lg:text-xl transition duration-300 ease-in-out transform hover:bg-blue-600 hover:shadow-lg active:scale-95">
             Réserver
           </button>
           {showAlert && <Alert isSuccess={status} />}

@@ -51,7 +51,7 @@ const Info = ({ }) => {
 </svg>
 
       <a href={urlToMenu} target="_blank" rel="noopener noreferrer" className="text-center">
-            <button className="bg-grey mb-8 font-semibold lg:font-medium lg:bg-primary lg:text-white text-gray-900 py-2 px-4 rounded  lg:mb-8 text-base md:text-lg lg:text-xl xl:text-2xl">Voir les cartes de nos restaurants</button>
+            <button className="bg-grey mb-8 font-semibold lg:font-medium lg:bg-primary lg:text-white text-primary py-2 px-4 rounded  lg:mb-8 text-base md:text-lg lg:text-xl xl:text-2xl transition duration-300 ease-in-out transform hover:bg-blue-600 hover:shadow-lg active:scale-95">Voir les cartes de nos restaurants</button>
           </a>
       <p className="text-center mb-1 text-base md:text-lg lg:text-xl xl:text-2xl lg:text-gray-900 lg:mt-0 ">Grande occasion ? Réserver un diner privé par téléphone.</p>
     </div>

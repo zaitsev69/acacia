@@ -9,7 +9,7 @@ export default async function handler(req, res) {
       return res.status(500).json({ error: 'Erreur de configuration du serveur' });
     }
 
-    // Convertir et formater la date
+
     const formattedDate = new Date(date).toLocaleDateString('fr-FR', {
       day: 'numeric',
       month: 'long',
