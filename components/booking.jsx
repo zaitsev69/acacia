@@ -9,7 +9,7 @@ const Booking = () => {
     name: '',
     date: '',
     phone: '',
-    time: 'Sélectionnez une heure',
+    time: '--Sélectionnez une heure--',
     guests: '',
     diet: [],
     children: 'Non',
@@ -18,6 +18,7 @@ const Booking = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -31,10 +32,18 @@ const Booking = () => {
     }
   };
 
+  const validateForm = () => {
+    const newErrors = {};
+    if (formData.time === '--Sélectionnez une heure--') {
+      newErrors.time = "Veuillez sélectionner une heure.";
+    }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.time === '--Sélectionnez une heure--') {
-      alert("Veuillez sélectionner une heure.");
+    if (!validateForm()) {
       return;
     }
 
@@ -51,6 +60,8 @@ const Booking = () => {
       setShowAlert(true);
       setStatus(true);
       setFormData(initialFormData);
+    } else {
+      // Handle error from server if needed
     }
   };
 
@@ -109,13 +120,14 @@ const Booking = () => {
                 onChange={handleChange}
                 value={formData.time}
               >
-                <option value="Sélectionnez une heure">Sélectionnez une heure</option>
+                <option value="--Sélectionnez une heure--">--Sélectionnez une heure--</option>
                 <option value="12:00">12:00 (Uniquement le dimanche)</option>
                 <option value="12:30">12:30 (Uniquement le dimanche)</option>
                 <option value="19:30">19:30</option>
                 <option value="20:00">20:00</option>
                 <option value="20:30">20:30</option>
               </select>
+              {errors.time && <p className="text-red-500 text-sm">{errors.time}</p>}
             </div>
             <div>
               <label htmlFor="guests" className="block text-base font-medium text-gray-700 lg:text-xl">Nombre de Couverts:</label>
