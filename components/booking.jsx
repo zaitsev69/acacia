@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import Alert from './ui/alert';
 
 const Booking = () => {
@@ -9,15 +9,15 @@ const Booking = () => {
     name: '',
     date: '',
     phone: '',
-    time: '',
+    time: 'Sélectionnez une heure',
     guests: '',
     diet: [],
-    children: '',
+    children: 'Non',
   }
 
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
-  const [showAlert, setShowAlert] = useState(false)
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -33,6 +33,11 @@ const Booking = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (formData.time === '--Sélectionnez une heure--') {
+      alert("Veuillez sélectionner une heure.");
+      return;
+    }
+
     const res = await fetch('/api/sendEmail', {
       method: 'POST',
       headers: {
@@ -40,20 +45,23 @@ const Booking = () => {
       },
       body: JSON.stringify(formData),
     });
+
     const result = await res.json();
     if (result.success) {
-      setShowAlert(true)
+      setShowAlert(true);
       setStatus(true);
-      setFormData(initialFormData)
+      setFormData(initialFormData);
     }
   };
 
   return (
-    <div id="booking" className="flex justify-center items-center bg-cover  lg:py-32 mt-4 mb-4 bg-local bg-center bg-[url('/inside.jpeg')] ">
+    <div id="booking" className="flex justify-center items-center bg-cover lg:py-32 mt-4 mb-4 bg-local bg-center bg-[url('/inside.jpeg')]">
       <div className="bg-white bg-opacity-80 p-6 shadow-md max-w-md w-full lg:max-w-4xl">
         <form className="space-y-4" onSubmit={handleSubmit}>
-          <h2 className="uppercase text-gold underline text-center text-xl  lg:text-3xl">Réservation</h2>
-          <p className="text-center text-base text-black lg:text-xl">Vous pouvez réserver par téléphone au<br /> 04 90 65 44 25 ou via ce formulaire :</p>
+          <h2 className="uppercase text-gold underline text-center text-xl lg:text-3xl">Réservation</h2>
+          <p className="text-center text-base text-black lg:text-xl">
+            Vous pouvez réserver par téléphone au<br /> 04 90 65 44 25 ou via ce formulaire :
+          </p>
 
           <div className="space-y-4 lg:grid lg:grid-cols-2 lg:gap-4 lg:space-y-0">
             <div>
@@ -99,8 +107,10 @@ const Booking = () => {
                 required
                 className="mt-1 block text-black w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
+                value={formData.time}
               >
-                <option value="12:00">12:00 (Uniquement le dimanche) </option>
+                <option value="Sélectionnez une heure">Sélectionnez une heure</option>
+                <option value="12:00">12:00 (Uniquement le dimanche)</option>
                 <option value="12:30">12:30 (Uniquement le dimanche)</option>
                 <option value="19:30">19:30</option>
                 <option value="20:00">20:00</option>
@@ -137,7 +147,6 @@ const Booking = () => {
             <div className="lg:col-span-2">
               <label htmlFor="diet" className="block text-base font-medium text-gray-700 pb-1 lg:text-xl">Régime Particulier :</label>
               <div id="diet" className="space-y-2">
-
                 <div>
                   <input
                     type="checkbox"
@@ -193,8 +202,6 @@ const Booking = () => {
         </form>
       </div>
     </div>
-
-
   );
 };
 
