@@ -87,12 +87,11 @@ const Booking = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-base font-medium text-gray-700 lg:text-xl">Adresse mail:</label>
+              <label htmlFor="email" className="block text-base font-medium text-gray-700 lg:text-xl">Email (si vous souhaitez suivre nos actualités)</label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                required
                 className="mt-1 text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
               />
@@ -147,7 +146,7 @@ const Booking = () => {
                 id="guests"
                 name="guests"
                 min="1"
-                max="20"
+                max="10"
                 required
                 className="mt-1 block text-black w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm lg:text-base"
                 onChange={handleChange}
