@@ -38,14 +38,14 @@ const Hero = ({ }) => {
       <div className="flex flex-col items-center">
         <h1 className="hidden text-gold underline text-xl  lg:block uppercase lg:text-4xl lg:mt-24 lg:mb-6">Maison l&apos;Acacia</h1>
         <p className="text-black text-xl text-center lg:w-1/3 hidden lg:mb-12  italic font-medium lg:block">
-          Dans un lieu unique, niché dans un petit village des Dentelles de Montmirail, la cheffe Joanna vous invite à découvrir sa passion pour l'art culinaire, une cuisine avec des influences asiatiques et méditerranéennes.
+          Dans un lieu unique, niché dans un petit village des Dentelles de Montmirail, la cheffe Joanna vous invite à découvrir sa passion pour l&apos;art culinaire, une cuisine avec des influences asiatiques et méditerranéennes.
         </p>
       </div>
       <div className="lg:flex lg:items-center  lg:mx-24 lg:bg-[url('/quote.png')] bg-no-repeat bg-left-top">
         <div className="lg:flex lg:flex-col lg:items-center">
           <h1 className="text-gold underline text-xl uppercase lg:hidden">Maison l&apos;Acacia</h1>
           <p className=" text-base text-black lg:text-xl lg:text-left lg:w-4/6 lg:mt-4 p-4 lg:hidden">
-            Dans un lieu unique, niché dans un petit village des Dentelles de Montmirail, la cheffe Joanna vous invite à découvrir sa passion pour l'art culinaire, une cuisine avec des influences asiatiques et méditerranéennes.
+            Dans un lieu unique, niché dans un petit village des Dentelles de Montmirail, la cheffe Joanna vous invite à découvrir sa passion pour l&apos;art culinaire, une cuisine avec des influences asiatiques et méditerranéennes.
           </p>
           <div className="h-0.5 mx-10  bg-gold"></div>
           <p className=" text-base lg:text-xl lg:text-left lg:w-4/6 lg:mt-4 lg:block p-4">
