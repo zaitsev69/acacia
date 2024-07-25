@@ -35,25 +35,35 @@ const Hero = ({ }) => {
 
   return (
     <div id="about" className="text-center mt-4 mx-2">
-      <h1 className="hidden text-gold underline text-xl  lg:block uppercase lg:text-4xl lg:my-24">Maison l&apos;Acacia</h1>
+      <div className="flex flex-col items-center">
+        <h1 className="hidden text-gold underline text-xl  lg:block uppercase lg:text-4xl lg:mt-24 lg:mb-6">Maison l&apos;Acacia</h1>
+        <p className="text-black text-xl text-center lg:w-1/3 hidden lg:mb-12  italic font-medium lg:block">
+          Dans un lieu unique, niché dans un petit village des Dentelles de Montmirail, la cheffe Joanna vous invite à découvrir sa passion pour l'art culinaire, une cuisine avec des influences asiatiques et méditerranéennes.
+        </p>
+      </div>
       <div className="lg:flex lg:items-center  lg:mx-24 lg:bg-[url('/quote.png')] bg-no-repeat bg-left-top">
         <div className="lg:flex lg:flex-col lg:items-center">
           <h1 className="text-gold underline text-xl uppercase lg:hidden">Maison l&apos;Acacia</h1>
-          <p className="text-base text-black lg:text-xl lg:text-left lg:w-4/6 lg:mt-4">
-            L&apos;Acacia en Provence est un lieu unique qui se distingue par sa terrasse ensoleillée et son ambiance conviviale.
-            La cheffe Joanna, passionnée par l&apos;art culinaire, propose une cuisine raffinée et créative, mettant à l&apos;honneur les produits locaux de la région.
+          <p className=" text-base text-black lg:text-xl lg:text-left lg:w-4/6 lg:mt-4 p-4 lg:hidden">
+            Dans un lieu unique, niché dans un petit village des Dentelles de Montmirail, la cheffe Joanna vous invite à découvrir sa passion pour l'art culinaire, une cuisine avec des influences asiatiques et méditerranéennes.
           </p>
-          <p className="hidden text-base lg:text-xl lg:text-left lg:w-4/6 lg:mt-4 lg:block">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, deserunt minima commodi eveniet error, eius voluptatum eaque, ducimus quis quidem dolores aliquid. Eius adipisci esse odit fugit. Vel, possimus minima?anna, passionnée par l&apos;art culinaire, propose une cuisine raffinée et créative, mettant à l&apos;honneur les produits locaux de la région.
+          <div className="h-0.5 mx-10  bg-gold"></div>
+          <p className=" text-base lg:text-xl lg:text-left lg:w-4/6 lg:mt-4 lg:block p-4">
+            L&apos;Acacia en Provence vous propose un menu dégustation en 4 plats avec accords mets et vin.
+            Du mercredi au samedi, il est également possible de venir au Petit Acacia pour boissons, vin, et des grignotages simples, nous proposont également un petit menu à 25 euros.
+            Notre menu étant essentiellement végétale, des menus végétarien ou végan peuvent être possible. Nous pouvons également répondre à la plupart des régimes alimentaires et des allergies, mais seulement si vous nous en informez à l&apos;avance.
           </p>
         </div>
         <Image src="/exte.JPEG" alt="Plate of Food" layout="responsive" width={250} height={250} className="rounded-lg hidden lg:block max-w-md" />
       </div>
-      <div className="lg:flex flex-row lg:mx-24 hidden items-center mt-48 lg:bg-[url('/quote.png')] bg-no-repeat bg-right-top">
-        <Image src="/rocque.JPEG" alt="Plate of Food" layout="responsive" width={250} height={250} className="rounded-lg lg:flex max-w-md" />
-        <p className="text-base lg:text-xl lg:w-4/6 lg:ml-4 lg:text-right">
-          L&apos;Acacia en Provence est un lieu unique qui se distingue par sa terrasse ensoleillée et son ambiance conviviale.
-          La cheffe Joanna, passionnée par l&apos;art culinaire, propose une cuisine raffinée et créative, mettant à l&apos;honneur les produits locaux de la région.
+      <div className="lg:flex flex-row lg:mx-24  items-center lg:mt-48 lg:bg-[url('/quote.png')] bg-no-repeat bg-right-top">
+        <Image src="/rocque.JPEG" alt="Plate of Food" layout="responsive" width={250} height={250} className="rounded-lg lg:flex max-w-md hidden" />
+        <div className="h-0.5 mx-10   bg-gold"></div>
+        <p className=" text-base lg:text-xl lg:w-4/6 lg:ml-4 lg:text-right p-4">
+          Pour des groupes de plus de 10 personnes nous aimons organiser des dîners privés, avec le restaurant rien que pour vous n&apos;importe quel jour.
+          Comme beaucoup d&apos;entre vous le savent, nous utilisons des produits locaux (biologiques) et des vins locaux.
+          Nous avons hâte de vous voir ❤️ <br></br>
+          Paiement par carte et espèces - chèques acceptés.
         </p>
       </div>
 

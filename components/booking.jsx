@@ -186,7 +186,7 @@ const Booking = () => {
             </div>
           </div>
 
-          <button type="submit" className="w-full py-2 px-4 bg-primary text-white font-medium rounded-md shadow-sm lg:text-xl transition duration-300 ease-in-out transform hover:bg-blue-600 hover:shadow-lg active:scale-95">
+          <button type="submit" className="w-full py-2 px-4 bg-primary text-white font-medium rounded-md shadow-sm lg:text-xl transition duration-300 ease-in-out transform lg:hover:bg-blue-600 hover:shadow-lg active:scale-95">
             Réserver
           </button>
           {showAlert && <Alert isSuccess={status} />}
