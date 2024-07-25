@@ -48,7 +48,7 @@ const Hero = ({ }) => {
             Dans un lieu unique, niché dans un petit village des Dentelles de Montmirail, la cheffe Joanna vous invite à découvrir sa passion pour l&apos;art culinaire, une cuisine avec des influences asiatiques et méditerranéennes.
           </p>
           <div className="h-0.5 mx-10  bg-gold"></div>
-          <p className=" text-base lg:text-xl lg:text-left lg:w-4/6 lg:mt-4 lg:block p-4">
+          <p className=" text-base text-black lg:text-xl lg:text-left lg:w-4/6 lg:mt-4 lg:block p-4">
             L&apos;Acacia en Provence vous propose un menu dégustation en 4 plats avec accords mets et vin.
             Du mercredi au samedi, il est également possible de venir au Petit Acacia pour boissons, vin, et des grignotages simples, nous proposont également un petit menu à 25 euros.
             Notre menu étant essentiellement végétale, des menus végétarien ou végan peuvent être possible. Nous pouvons également répondre à la plupart des régimes alimentaires et des allergies, mais seulement si vous nous en informez à l&apos;avance.
@@ -59,7 +59,7 @@ const Hero = ({ }) => {
       <div className="lg:flex flex-row lg:mx-24  items-center lg:mt-48 lg:bg-[url('/quote.png')] bg-no-repeat bg-right-top">
         <Image src="/rocque.JPEG" alt="Plate of Food" layout="responsive" width={250} height={250} className="rounded-lg lg:flex max-w-md hidden" />
         <div className="h-0.5 mx-10   bg-gold"></div>
-        <p className=" text-base lg:text-xl lg:w-4/6 lg:ml-4 lg:text-right p-4">
+        <p className=" text-base text-black lg:text-xl lg:w-4/6 lg:ml-4 lg:text-right p-4">
           Pour des groupes de plus de 10 personnes nous aimons organiser des dîners privés, avec le restaurant rien que pour vous n&apos;importe quel jour.
           Comme beaucoup d&apos;entre vous le savent, nous utilisons des produits locaux (biologiques) et des vins locaux.
           Nous avons hâte de vous voir ❤️ <br></br>

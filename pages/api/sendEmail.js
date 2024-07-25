@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { name, date, phone, time, guests, diet, children } = req.body;
+    const { name, email, date, phone, time, guests, diet, children } = req.body;
 
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
       console.error('Les variables d\'environnement EMAIL_USER ou EMAIL_PASS ne sont pas définies');
@@ -30,6 +30,7 @@ export default async function handler(req, res) {
       subject: 'Nouvelle Réservation',
       text: `
         Nom: ${name}\n
+        Email: ${email}\n
         Date: ${formattedDate}\n
         Numéro de Téléphone: ${phone}\n
         Heure: ${time}\n
