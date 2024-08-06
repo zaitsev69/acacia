@@ -1,10 +1,9 @@
-"use client";
+'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Alert from './ui/alert';
 
 const Booking = () => {
-
   const initialFormData = {
     name: '',
     date: '',
@@ -13,12 +12,20 @@ const Booking = () => {
     guests: '',
     diet: [],
     children: 'Non',
-  }
+  };
 
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [errors, setErrors] = useState({});
+  const [availableTimes, setAvailableTimes] = useState([]);
+
+  const timeOptions = {
+    'dimanche': ['12:00', '12:30'],
+    'jeudi': ['19:30', '20:00', '20:30'],
+    'vendredi': ['19:30', '20:00', '20:30'],
+    'samedi': ['19:30', '20:00', '20:30'],
+  };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -30,12 +37,22 @@ const Booking = () => {
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
     }
+
+    if (name === 'date') {
+      updateAvailableTimes(value);
+    }
+  };
+
+  const updateAvailableTimes = (date) => {
+    const day = new Date(date).toLocaleDateString('fr-FR', { weekday: 'long' }).toLowerCase();
+    setAvailableTimes(timeOptions[day] || []);
+    setFormData((prev) => ({ ...prev, time: '--Sélectionnez une heure--' }));
   };
 
   const validateForm = () => {
     const newErrors = {};
     if (formData.time === '--Sélectionnez une heure--') {
-      newErrors.time = "Veuillez sélectionner une heure.";
+      newErrors.time = "Veuillez sélectionner une heure. Notez que les réservations ne sont possibles que les soirs du jeudi au samedi ainsi que le dimanche midi.";
     }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -64,6 +81,7 @@ const Booking = () => {
       // Handle error from server if needed
     }
   };
+
 
   return (
     <div id="booking" className="flex justify-center items-center bg-cover lg:py-32 mt-4 mb-4 bg-local bg-center bg-[url('/inside.jpeg')]">
@@ -131,11 +149,9 @@ const Booking = () => {
                 value={formData.time}
               >
                 <option value="--Sélectionnez une heure--">--Sélectionnez une heure--</option>
-                <option value="12:00">12:00 (Uniquement le dimanche)</option>
-                <option value="12:30">12:30 (Uniquement le dimanche)</option>
-                <option value="19:30">19:30</option>
-                <option value="20:00">20:00</option>
-                <option value="20:30">20:30</option>
+                {availableTimes.map((time) => (
+                  <option key={time} value={time}>{time}</option>
+                ))}
               </select>
               {errors.time && <p className="text-red-500 text-sm">{errors.time}</p>}
             </div>
