@@ -20,6 +20,7 @@ const Hero = ({ }) => {
     dots: false,
     pauseOnHover: false,
     draggable: false,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 900,
